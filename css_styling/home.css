@@ -1,0 +1,71 @@
+#home {
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(whitesmoke), to(#C4FFF9));
+  background-image: linear-gradient(to top right, whitesmoke, #C4FFF9);
+  height: 71.5vh;
+  overflow: hidden;
+}
+
+#home figure {
+  position: absolute;
+  top: 13.5%;
+  right: 5%;
+}
+
+#home article {
+  margin: 8rem 0 0 10rem;
+  width: 50%;
+  position: absolute;
+}
+
+#home article h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+#home article p {
+  width: 70%;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+#home article button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: #018b87;
+  cursor: pointer;
+}
+
+#home article button:hover {
+  background-color: #016e6b;
+}
+
+#home article::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#d2f5f7), color-stop(#C4FFF9), to(#ffea006e));
+  background-image: linear-gradient(to top right, #d2f5f7, #C4FFF9, #ffea006e);
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -5%;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#d2f5f7d5), color-stop(#C4FFF9), to(#ffea006e));
+  background-image: linear-gradient(to bottom right, #d2f5f7d5, #C4FFF9, #ffea006e);
+}

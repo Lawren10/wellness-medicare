@@ -1,0 +1,46 @@
+#gallery {
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#gallery #gallery-pics {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#gallery #gallery-pics figure {
+  width: calc((100% / 3) - 2rem);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#gallery #gallery-pics figure:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.253);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.253);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#gallery #gallery-pics img {
+  width: 100%;
+}

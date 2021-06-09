@@ -1,0 +1,97 @@
+
+$lato : 'Jost',
+sans-serif;
+
+@mixin flex-center {
+ display: flex;
+ align-items: center;
+}
+
+// About styling
+
+#about {
+ width: 60%;
+ margin: 5rem auto;
+ @include flex-center;
+ justify-content: center;
+ flex-direction: column;
+ padding: 2rem;
+ border-radius: 1rem;
+ background-image: linear-gradient(to right, #ffea0009, rgba(159, 255, 249, 0.09));
+
+ h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+ }
+
+ p {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.7rem;
+  padding: 2rem;
+  margin: -1rem 0 -1rem 0
+ }
+
+}
+
+#mission-vision {
+ @include flex-center;
+ justify-content: space-around;
+ margin-bottom: 1rem
+}
+
+#mission,
+#vission {
+ @include flex-center;
+ justify-content: center;
+ flex-direction: column;
+ width: 30%;
+ padding: 1.5rem;
+ border-radius: 1rem;
+
+ p {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+ }
+
+ .bg2 {
+  margin-top: 1.5rem;
+ }
+}
+
+#mission {
+ background-image: linear-gradient(to bottom right, #ffea0009, rgba(159, 255, 249, 0.09));
+
+}
+
+#vission {
+ background-image: linear-gradient(to bottom left, #ffea0009, rgba(159, 255, 249, 0.09));
+
+}
+
+.button-bg {
+ background-color: #07BEB8;
+ border: none;
+ border-radius: 0.2rem;
+
+ div {
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: $lato;
+  border-radius: 0.2rem;
+  background-color: #EDF2FB;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+   transform: rotate(-5deg);
+   transition: all 0.2s ease-in-out;
+  }
+ }
+}
+
+// About styling End

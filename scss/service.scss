@@ -1,0 +1,79 @@
+
+$lato : 'Jost',
+sans-serif;
+
+@mixin flex-center {
+ display: flex;
+ align-items: center;
+}
+
+// services styling
+
+#tag {
+ @include flex-center;
+ justify-content: space-between;
+ padding: 1.5rem 6rem;
+ background-color: rgb(0, 0, 20);
+ color: whitesmoke;
+ margin-top: 8rem;
+
+ h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+ }
+
+}
+
+#service-desc {
+ width: 60%;
+ margin: 8rem auto 0 auto;
+ @include flex-center;
+ justify-content: center;
+ flex-direction: column;
+ gap: 1rem;
+}
+
+#services {
+ width: 90%;
+ margin: 5rem auto 0 auto;
+ @include flex-center;
+ justify-content: center;
+ flex-wrap: wrap;
+ background-image: radial-gradient(circle, rgba(245, 245, 245, 0.377), #c4fff933);
+ padding: 1rem;
+ border-radius: 1rem;
+}
+
+.service-item {
+ width: calc(100%/3);
+ @include flex-center;
+ justify-content: center;
+ flex-direction: column;
+
+
+ figure {
+  @include flex-center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #02133f;
+ }
+
+ img {
+  width: 4rem;
+ }
+
+ article {
+  @include flex-center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+ }
+
+
+}
+
+// services styling End

@@ -1,0 +1,115 @@
+#about {
+  width: 60%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffea0009), to(rgba(159, 255, 249, 0.09)));
+  background-image: linear-gradient(to right, #ffea0009, rgba(159, 255, 249, 0.09));
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.7rem;
+  padding: 2rem;
+  margin: -1rem 0 -1rem 0;
+}
+
+#mission-vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+#mission,
+#vission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+#mission p,
+#vission p {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#mission .bg2,
+#vission .bg2 {
+  margin-top: 1.5rem;
+}
+
+#mission {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffea0009), to(rgba(159, 255, 249, 0.09)));
+  background-image: linear-gradient(to bottom right, #ffea0009, rgba(159, 255, 249, 0.09));
+}
+
+#vission {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#ffea0009), to(rgba(159, 255, 249, 0.09)));
+  background-image: linear-gradient(to bottom left, #ffea0009, rgba(159, 255, 249, 0.09));
+}
+
+.button-bg {
+  background-color: #07BEB8;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.button-bg div {
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  border-radius: 0.2rem;
+  background-color: #EDF2FB;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-bg div:hover {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}

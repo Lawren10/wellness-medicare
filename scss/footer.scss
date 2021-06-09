@@ -1,0 +1,95 @@
+
+$lato : 'Jost',
+sans-serif;
+
+@mixin flex-center {
+ display: flex;
+ align-items: center;
+}
+
+
+// footer stylling
+#action {
+ width: 100%;
+ @include flex-center;
+ justify-content: center;
+ flex-direction: column;
+ margin: 3rem auto 3rem auto;
+ padding: 1rem;
+ // border-radius: 1rem;
+ background-color: #01061b;
+
+ h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: whitesmoke;
+ }
+}
+
+footer {
+ @include flex-center;
+ justify-content: space-evenly;
+ padding: 4rem 0;
+ background-image: linear-gradient(to bottom, #b3f5f8, #a3fdf4, #ffea002a);
+
+ h4 {
+  font-size: 1.1rem;
+ }
+
+ ul {
+  list-style: none;
+
+  li {
+   color: rgb(1, 0, 31);
+   cursor: pointer;
+  }
+
+  a {
+   text-decoration: none;
+   color: rgb(1, 0, 31);
+
+   &:hover {
+    color: #ff7300;
+   }
+  }
+ }
+
+
+ #subscribe {
+  margin-top: 1rem;
+
+  input {
+   padding: 0.8rem;
+   font-size: 1rem;
+   background-color: transparent;
+   border: 1px solid rgba(0, 0, 0, 0.075);
+
+   &:focus {
+    outline: none;
+   }
+  }
+
+  .far {
+   font-size: 1.1rem;
+  }
+
+  #footer-social {
+   width: 50%;
+   margin-top: 1rem;
+   @include flex-center;
+   justify-content: space-evenly;
+  }
+ }
+
+ #department {
+  padding-top: 1.25rem;
+ }
+
+ #contact {
+  padding-top: 2.6rem;
+ }
+
+}
+
+// footer stylling End

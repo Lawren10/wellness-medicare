@@ -1,0 +1,47 @@
+
+$lato : 'Jost',
+sans-serif;
+
+@mixin flex-center {
+ display: flex;
+ align-items: center;
+}
+
+// gallery styling
+
+#gallery {
+ margin-top: 4rem;
+ font-size: 1.3rem;
+
+ h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+ }
+
+ #gallery-pics {
+  width: 80%;
+  margin: auto;
+  @include flex-center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  figure {
+   width: calc((100% / 3) - 2rem);
+   cursor: pointer;
+   transition: all 0.5s ease-out;
+
+   &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.253);
+    transition: all 0.5s ease-out;
+   }
+  }
+
+  img {
+   width: 100%;
+  }
+ }
+}
+
+// gallery styling End

@@ -1,0 +1,137 @@
+#blog {
+  margin-top: 6rem;
+}
+
+#blog #points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #02001a;
+  padding: 1.2rem;
+}
+
+#blog #points .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: whitesmoke;
+}
+
+#blog #points .items h3 {
+  font-size: 2.5rem;
+  color: #01f7c1;
+}
+
+#review-wrapper {
+  background: url(../assests/science-lab.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 0 4rem 0;
+  position: relative;
+}
+
+#review-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+#review-wrapper h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+#review-wrapper #reviews {
+  width: 60%;
+  height: 25rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+#review-wrapper #review-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#review-wrapper .review-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 10%;
+  padding: 2rem;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#review-wrapper .review-item figure {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#review-wrapper .review-item img {
+  width: 8rem;
+}
+
+#review-wrapper .review-item p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.movex {
+  -webkit-transform: translatex(0%);
+          transform: translatex(0%);
+  opacity: 1;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.move-negx {
+  -webkit-transform: translatex(-100%);
+          transform: translatex(-100%);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}

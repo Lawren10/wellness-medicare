@@ -1,0 +1,104 @@
+#action {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem auto 3rem auto;
+  padding: 1rem;
+  background-color: #01061b;
+}
+
+#action h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 4rem 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b3f5f8), color-stop(#a3fdf4), to(#ffea002a));
+  background-image: linear-gradient(to bottom, #b3f5f8, #a3fdf4, #ffea002a);
+}
+
+footer h4 {
+  font-size: 1.1rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  color: #01001f;
+  cursor: pointer;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #01001f;
+}
+
+footer ul a:hover {
+  color: #ff7300;
+}
+
+footer #subscribe {
+  margin-top: 1rem;
+}
+
+footer #subscribe input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+footer #subscribe input:focus {
+  outline: none;
+}
+
+footer #subscribe .far {
+  font-size: 1.1rem;
+}
+
+footer #subscribe #footer-social {
+  width: 50%;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer #department {
+  padding-top: 1.25rem;
+}
+
+footer #contact {
+  padding-top: 2.6rem;
+}

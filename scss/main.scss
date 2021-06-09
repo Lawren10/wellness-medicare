@@ -1,0 +1,761 @@
+@import './header.scss';
+@import './home.scss';
+@import './about.scss';
+@import './service.scss';
+@import './gallery.scss';
+@import './blog.scss';
+@import './footer.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$lato : 'Jost',sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #EDF2FB;
+  font-family: $lato;
+  color: rgb(1, 1, 27);
+}
+
+
+@mixin media($width-size) {
+ @media screen and (max-width:$width-size) {
+  @content;
+ }
+}
+
+@mixin media-only-width($width-size) {
+ @media screen and (max-width:$width-size) {
+  @content;
+ }
+}
+
+@include media(1280px){
+ #home{
+  height: 50vh;
+ }
+}
+
+@include media(1024px) {
+ #home {
+  height: 40vh;
+
+  figure{
+   top: 24%;
+   right: -10%;
+  }
+ }
+}
+
+
+@include media-only-width(768px) {
+ header {
+  position: relative;
+
+  #top-nav {
+   display: none;
+  }
+
+  #logo {
+   position: absolute;
+  }
+
+  .more-info {
+   visibility: hidden;
+  }
+
+ }
+
+ #static-nav ul {
+  width: 100%;
+ }
+
+ #home {
+  height: 60vh;
+
+  figure {
+   top: 40%;
+   right: -15%;
+
+   img {
+    width: 35rem;
+   }
+  }
+
+  article {
+   width: 70%;
+   margin: 12rem 0 0 1rem;
+
+   &::after {
+    top: 40%;
+    left: 83%;
+    width: 30rem;
+    height: 30rem;
+   }
+
+   h1 {
+    font-size: 2.5rem;
+   }
+
+   button {
+    font-size: 1.2rem;
+   }
+
+  }
+
+  &::before {
+   top: -10%;
+   left: -25%;
+   width: 40rem;
+   height: 40rem;
+  }
+
+  p {
+   font-size: 1.5rem;
+  }
+
+ }
+
+ #about {
+  width: 90%;
+  padding: 0;
+
+  p {
+   font-size: 1.2rem;
+   text-align: center;
+  }
+ }
+
+
+ #mission,
+ #vission {
+  width: 90%;
+
+  p {
+   font-size: 1.1rem;
+  }
+ }
+
+ #tag {
+  padding: .5rem .5rem;
+
+  h3 {
+   padding-right: 3rem;
+  }
+
+  p {
+   padding-right: 3rem;
+  }
+
+  div {
+   padding: 1rem;
+  }
+ }
+
+ #service-desc {
+  width: 80%;
+  text-align: center;
+
+  p {
+   font-size: 1.1rem;
+  }
+ }
+
+ #services {
+  width: 100%;
+
+  .service-item {
+   width: calc(100%/2);
+  }
+
+ }
+
+ #gallery {
+
+  #gallery-pics {
+   width: 90%;
+   gap: 1rem;
+
+   figure {
+    width: calc((100% / 2) - 1rem);
+   }
+
+  }
+
+ }
+
+
+ #blog {
+
+  #points {
+   padding: 0;
+
+   .items h3 {
+    font-size: 2rem;
+   }
+
+  }
+
+  #reviews {
+   width: 100%;
+  }
+
+ }
+
+
+ footer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  h4 {
+   font-size: 1.2rem;
+  }
+
+  #subscribe,
+  #department,
+  #contact {
+   padding-left: 2rem;
+  }
+
+  #department {
+   padding-top: 4rem;
+  }
+
+  #support {
+   padding-top: 3rem;
+  }
+
+ }
+
+}
+
+
+
+
+@include media(540px) {
+ header{
+  position: relative;
+
+  #top-nav {
+   display: none;
+  }
+
+  #logo{
+   position: absolute;
+  }
+  
+  .more-info{
+   visibility: hidden;
+  }
+
+ }
+ 
+ #static-nav ul {
+  width: 100%;
+ }
+
+ #home{
+  height: 60vh;
+
+  figure{
+   top: 38%;
+   right: -20%;
+
+   img{
+    width: 25rem;
+   }
+  }
+  
+  article{
+  width: 70%;
+  margin: 11rem 0 0 1rem ;
+  
+  &::after{
+   top: 35%;
+   left: 80%;
+   width: 30rem;
+   height: 30rem;
+  }
+
+  h1{
+   font-size: 1.6rem;
+  }
+
+  p{
+   font-size: .9rem;
+  }
+
+  button{
+   font-size: .9rem;
+  }
+
+  }
+
+  &::before{
+   top: -10%;
+   left: -25%;
+   width: 30rem;
+   height: 30rem;
+  }
+
+ }
+
+ #about{
+  width: 90%;
+  padding: 0;
+
+  p{
+   font-size: 1.1rem;
+  }
+ }
+
+ #mission-vision{
+  flex-direction: column;
+ }
+
+ #mission,
+ #vission{
+  width: 90%;
+  p {
+   font-size: 1.1rem;
+  }
+ }
+
+ #tag{
+  padding: .5rem .5rem;
+
+  h3{
+   padding-right: 3rem;
+  }
+
+  p{
+   padding-right: 3rem;
+  }
+  div{
+   padding: 1rem;
+  }
+ }
+
+ #service-desc{
+  width: 80%;
+  text-align: center;
+
+  p{
+   font-size: 1.1rem;
+  }
+ }
+
+ #services{
+  width: 100%;
+
+  .service-item{
+   width: calc(100%/2);
+
+   figure{
+    width: 5rem;
+    height: 5rem;
+   }
+
+   img{
+    width:3rem ;
+   }
+
+  }
+
+ }
+
+ #gallery{
+
+  #gallery-pics{
+   width: 90%;
+   gap: 1rem;
+ 
+   figure{
+    width: calc((100% / 2) - 1rem);
+   }
+ 
+  }
+
+ }
+
+
+ #blog{
+
+  #points{
+   padding: 0;
+
+   .items h3 {
+    font-size: 2rem;
+   }
+
+  }
+
+  #reviews{
+   width: 100%;
+  }
+
+ }
+
+
+ footer{
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  h4{
+   font-size: 1.2rem;
+  }
+
+  #subscribe,#department,#contact{
+   padding-left: .5rem;
+  }
+
+ #department{
+  padding-top: 4rem;
+ }
+
+ #support{
+  padding-top: 3rem;
+ }
+
+ }
+
+}
+
+
+@include media(420px){
+
+ #home {
+  height: 60vh;
+
+  figure {
+   top: 50%;
+   right: -15%;
+
+   img {
+    width: 20rem;
+   }
+  }
+
+  article {
+   width: 70%;
+   margin: 12rem 0 0 1rem;
+
+   &::after {
+    display: none;
+   }
+
+   h1 {
+    font-size: 1.2rem;
+   }
+
+   p{
+    font-size: 1rem;
+   }
+
+   button{
+    font-size: .8rem;
+   }
+
+  }
+
+  &::before {
+   top: -10%;
+   left: -25%;
+   width: 25rem;
+   height: 25rem;
+  }
+
+ }
+
+ #about {
+  width: 100%;
+  padding: 0;
+
+ }
+
+ #tag{
+  flex-direction: column;
+
+  h3{
+   padding-left: 2rem;
+  }
+
+  p{
+   padding: 1rem  2rem;
+  }
+
+  button{
+   margin: .5rem 0;
+  }
+
+ }
+
+ #services {
+  width: 100%;
+  // gap: 2rem;
+
+  .service-item {
+   width: 100%;
+   margin-bottom: 2rem;
+
+   figure {
+    width: 5rem;
+    height: 5rem;
+   }
+
+   img {
+    width: 3rem;
+   }
+
+   article {
+    padding: 0;
+   }
+
+  }
+
+ }
+
+ #gallery {
+
+  #gallery-pics {
+   width: 100%;
+
+   figure {
+    padding: 0 .8rem;
+    width: 100%;
+   }
+
+  }
+
+ }
+
+ #blog {
+
+  #points {
+   padding: 0;
+   flex-wrap: wrap;
+
+   .items h3 {
+    font-size: 2rem;
+   }
+
+   .items{
+    width: 50%;
+    margin-bottom: .9rem;
+   }
+
+  }
+
+ }
+
+ #action h4{
+  font-size: 1rem;
+ }
+
+ footer {
+  display: grid;
+  grid-template-columns: 100%;
+
+  h4 {
+   font-size: 1.2rem;
+  }
+
+  #subscribe,
+  #quicklink,
+  #department,
+  #support,
+  #contact {
+   padding-left: 3rem;
+  }
+  
+
+  #quicklink{
+   padding-top: 4rem;
+  }
+
+ }
+
+}
+
+
+@include media(375px){
+#home {
+ height: 60vh;
+
+ figure {
+  top: 50%;
+  right: -18%;
+
+  img {
+   width: 18rem;
+  }
+ }
+
+ article {
+  width: 70%;
+  margin: 10rem 0 0 1rem;
+
+  &::after {
+   display: none;
+  }
+
+  h1 {
+   font-size: 1rem;
+  }
+
+  p {
+   font-size: .9rem;
+  }
+
+  button {
+   font-size: .6rem;
+  }
+
+ }
+
+ &::before {
+  top: -10%;
+  left: -25%;
+  width: 22rem;
+  height: 22rem;
+ }
+
+}
+
+
+
+}
+
+
+@include media(320px){
+
+#home {
+ height: 70vh;
+
+ figure {
+  top: 56%;
+  right: -18%;
+
+  img {
+   width: 16rem;
+  }
+ }
+
+ article {
+  width: 70%;
+  margin: 10rem 0 0 1rem;
+  
+
+  p{
+   font-size: .8rem;
+  }
+
+
+  button{
+   font-size: .7rem;
+  }
+
+  &::after {
+   top: 35%;
+   left: 80%;
+   width: 30rem;
+   height: 30rem;
+  }
+
+  h1 {
+   font-size: 1rem;
+  }
+
+ }
+
+ &::before {
+  top: -10%;
+  left: -25%;
+  width: 20rem;
+  height: 20rem;
+ }
+
+}
+
+ #services {
+  width: 100%;
+  // gap: 2rem;
+
+  .service-item {
+   width: 100%;
+
+   figure {
+    width: 5rem;
+    height: 5rem;
+   }
+
+   img {
+    width: 3rem;
+   }
+
+   article {
+    padding: 0;
+   }
+
+  }
+
+ }
+
+ #gallery {
+
+  #gallery-pics {
+   width: 100%;
+
+   figure {
+    padding: 0 .8rem;
+    width: 100%;
+   }
+
+  }
+
+ }
+
+ #action h4 {
+  font-size: .9rem;
+ }
+
+ footer {
+  display: grid;
+  grid-template-columns: 100%;
+
+  h4 {
+   font-size: 1.2rem;
+  }
+
+  #subscribe,
+  #quicklink,
+  #department,
+  #support,
+  #contact {
+   padding-left: 1.5rem;
+  }
+
+
+  #quicklink {
+   padding-top: 3rem;
+  }
+
+ }
+
+
+
+}
+
